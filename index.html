@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Lidocafe</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lido Cafe</h1>
+      </div>
+      
+      <div class="content" style="max-width:800px">
+        <img class="mySlides" src="one.jpg" style="width:100%">
+        <img class="mySlides" src="two.jpg" style="width:100%">
+        <img class="mySlides" src="three.jpg" style="width:100%">
+      </div>
+      
+      <div class="center">
+        <div class="section">
+          <button class="buttonlightgrey" onclick="plusDivs(-1)">❮ Prev</button>
+          <button class="buttonlightgrey" onclick="plusDivs(1)">Next ❯</button>
+        </div>
+        <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+        <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+        <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+      </div>
+
+
+
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" red", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " red";
+        }
+        </script>
+    
+</body>
+</html>

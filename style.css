@@ -1,0 +1,34 @@
+.red {
+    background-color: red;
+}
+
+h1 {
+     text-align: center;
+}
+
+body { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: linear-gradient(90deg ,burlywood ,#eee , black  )
+}
+.buttonlightgrey{
+    background-color: lightgray;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.buttonlightgrey:hover{
+ cursor: pointer;
+}
+
+.w3-button {
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.w3-button:hover {
+    cursor: pointer;
+}
