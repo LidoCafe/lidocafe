@@ -12,7 +12,7 @@ body {
     align-items: center;
     flex-direction: column;
 
-    background: linear-gradient(90deg ,burlywood ,#eee , black  )
+    background: linear-gradient(90deg ,burlywood ,#eee , burlywood)
 }
 .buttonlightgrey{
     background-color: lightgray;
