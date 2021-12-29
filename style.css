@@ -11,8 +11,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #230903;
+    background-image: linear-gradient(80deg, #230903 0%, #d3b88c 74%);
 
-    background: linear-gradient(90deg ,burlywood ,#eee , burlywood)
 }
 .buttonlightgrey{
     background-color: lightgray;
